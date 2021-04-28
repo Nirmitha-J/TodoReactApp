@@ -1,5 +1,5 @@
-import react, { Component } from 'react';
-import { Col, Button, DropdownButton, Dropdown, Row, Alert, Badge } from 'react-bootstrap';
+import { Component } from 'react';
+import { Button, Badge } from 'react-bootstrap';
 
 export default class Todo extends Component {
     constructor(props) {
@@ -60,7 +60,7 @@ export default class Todo extends Component {
                     {this.state.items.length > 0 ? <table style={{ width: "100%", borderCollapse: 'collapse' }}>
                         <tr >
                             <th style={{ border: "1px solid black", textAlign: "center" }}>Items</th>
-                            <th style={{ border: "1px solid black", textAlign: "center" }}>Delete if completed</th>
+                            <th style={{ border: "1px solid black", textAlign: "center" }}>Action</th>
                         </tr>
                         {this.state.items.map((item, index) => (
                             <tr>
